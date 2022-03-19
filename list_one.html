@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <title>AlexWeb</title>
+    <link rel="stylesheet" href="(list_one)style.css" />
+
+</head>
+<body>
+  <div class="list" name = "shoppingList">
+  <nav>
+      <div class="logo">AllyRox</div>
+        <div class="nav-items">
+            <ul><li><a href="index.html">Home</a></li></ul>
+            <ul><li><a href="/">LuvLush</a></li></ul>
+            <ul><li><a href="/">About</a></li></ul> 
+            <ul><li><a href="/">Contact Us</a></li></ul>
+        </div> 
+         <div class="yourCartModal">
+            <button type="button" id="modal_btn" class="modalbtn">Your Cart</button>
+            </div>
+                <!-- Creating the container for the modal -->
+              <div id="modal" class = "modal">
+              <div class="modalcontent">
+                <!-- Creating the contents of the modal -->
+              <span id="close_btn" class="closebtn">x</span>
+              <div><span class="number">0</span></div>
+                <!---making of modal cart display-->
+
+                <ul></ul>
+                
+                <button type="button">Clear All</button>
+
+
+              <button type="button" id="Remove">Remove</button>
+              <button type="button" class="cartWidgie" onclick="window.location.href='cart.html'" class="counter-plus">BuyMe</button>
+            </div>
+          </div>
+        <script src="storage.js"></script>           
+      </nav>
+      <div>
+        <div class="title">
+          <div class="title-box">
+            <h1 name= "name" id="name">Girl Boss</h1>
+          </div>
+        </div>
+      </div>
+        <div class="listing" type="selection">
+            <div class="container-form">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img class="img" value(src)="1" src="images/4.JPG" alt="img1" name = "image" id="image">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img class="img" src="images/2.JPG" alt="img2">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img  class="img" src="images/3.JPG" alt="img3">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+              
+              <script src="listingRow.js"></script>
+              <h2>sleak flexible bootcut black powerpants</h2>
+            <div class="inputbox">
+          <h5 name = "weight"  id = "weight">7.00 : Under - 16 oz</h5>
+        </div>
+          <div class="column-bottom">
+            <div class="add-button">
+              <div class="add-button" method="post"></div>
+              <button type="button" class="counter" onclick="counter()" id= "addBtn">Add to cart</button>    
+              <div class="buy-button"></div>
+              <span class="price" post="price" id = "price" name="price" value="60">$60</span>
+              <button type="button" class="cartPage" onclick="save()" href="cart.html">BuyMe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  </html>
+
+   <script>
+    //If the button to open the modal is clicked, then
+    //it should open the modal. ids are used to refer to the HTML elements
+       document.getElementById("modal_btn").onclick = function(){
+           document.getElementById("modal").style.display = 'block';
+       }
+    // If the close button on the modal is clicked, then
+    // the modal should close. ids are used to refer to the HTML elements
+        document.getElementById("close_btn").onclick = function(){
+           document.getElementById("modal").style.display = 'none';
+       }
+       
+
+   </script>
